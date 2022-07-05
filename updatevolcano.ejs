@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<center>
+<h2>UPDATE VOLCANO</h2>
+<form action="/updatingvolcanodetails/<%= data.id %>" method="get">
+  <label for="name">Name of volcano:</label><br>
+  <input type="text" id="name" name="name" value=<%= data.name %>><br>
+  <label for="location">Location of volcano:</label><br>
+  <input type="text" id="location" name="location" value=<%= data.location %>><br><br>
+  <label for="history">History of volcano:</label><br>
+  <input type="text" id="history" name="history" value=<%= data.history %>><br><br>
+  <label for="active">Active or not:</label><br>
+  <input type="text" id="active" name="active" value=<%= data.active %>><br><br>
+  <input type="submit" value="update volcano">
+</form> 
+</center>
+
+
+</body>
+</html>
